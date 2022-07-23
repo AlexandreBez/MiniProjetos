@@ -1,0 +1,46 @@
+.area{
+    border: 1px solid red;
+}
+
+.loginArea{
+    background-color: white;
+    width: 60%;
+    margin-top: 8%;
+    border: 2px solid rgb(117, 112, 112);
+    border-radius: 10px;
+}
+
+.loginComponents{
+    padding: 2%;
+}
+
+.undrawImg{
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.form{
+    border-left: 1px solid rgb(117, 112, 112);
+}
+
+.logoImg{
+    margin-left: 34%;
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.link{
+    margin-left: 23%;
+}
+
+button{
+    margin-left: 35%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+}

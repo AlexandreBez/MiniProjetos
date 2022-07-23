@@ -1,0 +1,50 @@
+<div [hidden]="!invalidValues" class="alert alert-danger" id="erroAlert" role="alert">
+  Usuário e/ou senha incorretos.
+</div>
+<div [hidden]="!validValues" class="alert alert-success" id="successAlert" role="alert">
+  Usuário e/ou senha corretos.
+</div>
+
+<div class="container loginArea">
+
+  <div class="row row-cols-2 loginComponents">
+
+    <div class="col">
+      <img src="../../assets/undraw_reminder_re_hn9x.svg" class="undrawImg" alt="undraw" width="280" height="280">
+    </div>
+
+    <form class="col form needs-validation">
+
+      <div class="mb-3">
+        <img src="../../assets/CloudWish.png" class="logoImg" alt="logo" width="120" height="120">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="bi bi-person-badge"></i>
+          Email
+        </label>
+        <input type="email" class="form-control" id="inputEmail"
+          placeholder="example@example.com" [ngModelOptions]="{standalone: true}" [(ngModel)]="username" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="bi bi-file-lock"></i>
+          Password
+        </label>
+        <input type="password" class="form-control" 
+          placeholder="**********" id="inputPassword" [ngModelOptions]="{standalone: true}" [(ngModel)]="password" required>
+
+        <a href="#" class="link">Forgot password? Click here</a>
+      </div>
+
+      <button type="submit" class="btn btn-dark" id="loginButton" (click)="onClickSubmit()">Login</button>
+
+    </form>
+
+  </div>
+
+
+
+</div>
