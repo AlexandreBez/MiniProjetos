@@ -1,0 +1,46 @@
+<br>
+<div id="createdSuccess" *ngIf="alertSuccess" class="alert alert-success" role="alert">
+    <i class="bi bi-check-circle-fill"></i>
+    Task created with success!
+</div>
+<div id="emptyError" *ngIf="alertError" class="alert alert-danger" role="alert">
+    <i class="bi bi-exclamation-circle-fill"></i>
+    Task can't be empty!
+</div>
+
+<h1>Task List</h1>
+
+<div class="row row-cols-1 ">
+
+    <div class="col">
+
+        <label>
+            <i class="bi bi-list-task"></i>
+            Task
+        </label>
+        <!-- send the value of the input for the taskNameInput variable -->
+        <input id="taskInput" type="text" class="form-control" placeholder="Type your task...." #tasks>
+
+    </div>
+
+    <div class="col">
+
+        <label>Priority</label>
+        <div class="form-group">
+            <select class="form-control" #priority>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button id="btnTask" class="btn btn-primary" 
+        (click)="onAddTask(priority.value, tasks.value)"
+    >
+        <i class="bi bi-plus-circle-dotted"></i>
+        Create Task
+    </button>
+
+</div>
